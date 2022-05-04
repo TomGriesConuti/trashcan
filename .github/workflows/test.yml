@@ -1,0 +1,19 @@
+name: test
+
+on:
+  push:
+    branches:
+      - dev
+  pull_request:
+    branches:
+      - dev
+  workflow_dispatch:
+
+jobs:
+  hallo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: hello world
+        run: echo "Awoookadoo"
+        shell: bash
