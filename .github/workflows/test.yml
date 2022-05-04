@@ -21,6 +21,5 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: |
-            ls
-            cd /www/htdocs/w018823a/selfservice-dev
-            ls
+            cd /www/htdocs/w018823a/selfservice-dev/extensions/typo3.selfservice
+            git pull
