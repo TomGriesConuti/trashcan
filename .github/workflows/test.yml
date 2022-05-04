@@ -10,12 +10,6 @@ on:
   workflow_dispatch:
 
 jobs:
-  hallo:
-    runs-on: ubuntu-latest
-    steps:
-      - name: hello world
-        run: echo "Awoookadoo"
-        shell: bash
   deploy:
     runs-on: ubuntu-latest
     steps:
